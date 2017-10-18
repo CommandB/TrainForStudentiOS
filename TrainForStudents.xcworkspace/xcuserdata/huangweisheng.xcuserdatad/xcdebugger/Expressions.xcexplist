@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "EvaluationDetailCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:EvaluationDetailCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data[&quot;itemtitle&quot;].stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LBXScanWrapper.init(videoPreView : UIView, objType : [String], isCaptureImg : Bool, cropRect : CGRect, success : ([LBXScanResult]) -&gt; ()) -&gt; LBXScanWrapper:LBXScanWrapper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "CGRect.zero">
+            </PersistentString>
+            <PersistentString
+               value = "cropRect.equalTo(CGRect.zero)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PeiwuCollectionView.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():PeiwuCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedQuestionId">
+            </PersistentString>
+            <PersistentString
+               value = "q[&quot;questionsid&quot;].stringValue">
+            </PersistentString>
+            <PersistentString
+               value = "parentView?.anwserDic[selectedQuestionId]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WishAddController.btn_submit_inside(UIButton) -&gt; ():WishAddController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "submitParameter">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ExamCenterController.(btn_start_inside(UIButton) -&gt; ()).(closure #1):ExamCenterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;data&quot;].arrayValue">
+            </PersistentString>
+            <PersistentString
+               value = "json">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MeterialListCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:MeterialListCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.item">
+            </PersistentString>
+            <PersistentString
+               value = "parentView?.pageIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskCenterController.(getUndoneCollectionDatasource() -&gt; ()).(closure #1).(closure #1):TaskCenterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "arrayData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskCenterController.(getOverCollectionDatasource() -&gt; ()).(closure #1):TaskCenterController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyselfCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:MyselfCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "btn.imageView?.frame.debugDescription">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.item">
+            </PersistentString>
+            <PersistentString
+               value = "jsonDataSource[&quot;c0&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RadioCollectionView.collectionView(UICollectionView, layout : UICollectionViewLayout, sizeForItemAt : IndexPath) -&gt; CGSize:RadioCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lineHeight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MASViewConstraint install]:MASViewConstraint.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.secondViewAttribute.view">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WishListController.getWishList() -&gt; ():WishListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "wishView.isLastPage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OnlineAskController.viewDidLoad() -&gt; ():OnlineAskController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "player2">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DirectoryCollectionView.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():DirectoryCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "parentView">
+            </PersistentString>
+            <PersistentString
+               value = "parentView?.presentedController?.typeIndex">
+            </PersistentString>
+            <PersistentString
+               value = "parentView?.presentedController?.questionIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.login() -&gt; ():LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "txt_loginId.text">
+            </PersistentString>
+            <PersistentString
+               value = "txt_password.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OutlineCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:OutlineCollection.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.item">
+            </PersistentString>
+            <PersistentString
+               value = "jsonDataSource">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ExamViewController.initCollection() -&gt; ():ExamViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "questionIndex">
+            </PersistentString>
+            <PersistentString
+               value = "question[&quot;type&quot;].stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RadioCollectionView.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():RadioCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell?.isSelected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TurnTaskCollectionView.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():TurnTaskCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell?.frame.height">
+            </PersistentString>
+            <PersistentString
+               value = "collectionView.cellForItem(at: indexPath)?.subviews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PeiwuCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:PeiwuCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedArray">
+            </PersistentString>
+            <PersistentString
+               value = "btn.currentTitle">
+            </PersistentString>
+            <PersistentString
+               value = "tab">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyEvaluationListCollectionView.buttonBuilder(CGRect, String, String) -&gt; UIButton:MyEvaluationListCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "btn.frame.width.subtracting(30)">
+            </PersistentString>
+            <PersistentString
+               value = "frame.width.subtracting(35)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ExamViewController.viewWillAppear(Bool) -&gt; ():ExamViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "questionIndex">
+            </PersistentString>
+            <PersistentString
+               value = "typeIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EvaluationDetailCollectionView.btn_star_inside(sender : UIButton) -&gt; ():EvaluationDetailCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender.superview">
+            </PersistentString>
+            <PersistentString
+               value = "sender.superview as! UICollectionViewCell">
+            </PersistentString>
+            <PersistentString
+               value = "sender.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EvaluationDetailController.viewDidLoad() -&gt; ():EvaluationDetailController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "headData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EvaluationDetailController.(getDetailDatasource() -&gt; ()).(closure #1):EvaluationDetailController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;data&quot;].arrayValue">
+            </PersistentString>
+            <PersistentString
+               value = "print(headData)">
+            </PersistentString>
+            <PersistentString
+               value = "headData[&quot;evaluationid&quot;].stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "myPostRequest(String, [String : Any]?, method : HTTPMethod) -&gt; DataRequest:extension.swift">
+      </ContextState>
+      <ContextState
+         contextName = "UndoneCollectionView.collectionView(UICollectionView, numberOfItemsInSection : Int) -&gt; Int:UndoneCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "jsonDataSource.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.textFieldShouldReturn(UITextField) -&gt; Bool:LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "txt_loginId.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WishAddController.textFieldShouldBeginEditing(UITextField) -&gt; Bool:WishAddController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pickerViewData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VideoController.viewDidLoad() -&gt; ():VideoController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "headData[&quot;url&quot;].stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HistoryEvaluationController.(getEvaluationDatasource() -&gt; ()).(closure #1):HistoryEvaluationController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;data&quot;].arrayValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TurnCenterController.(getTurnTaskCollectionDatasource() -&gt; ()).(closure #1):TurnCenterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "print(json[&quot;data&quot;].arrayValue)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskCenterController.(myClosure(String, vc : UIViewController) -&gt; ()).(closure #1):TaskCenterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "print(json)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "QuestionCollectionView.collectionView(UICollectionView, layout : UICollectionViewLayout, sizeForItemAt : IndexPath) -&gt; CGSize:QuestionCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collectionView.dequeueReusableCell(withReuseIdentifier: &quot;c1&quot;, for: indexPath)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TurnTaskCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:TurnTaskCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+            <PersistentString
+               value = "linenum * itemHeight">
+            </PersistentString>
+            <PersistentString
+               value = "print(json)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MockExamCenterController.(btn_exam_inside(UIButton) -&gt; ()).(closure #1):MockExamCenterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "print(json)">
+            </PersistentString>
+            <PersistentString
+               value = "json">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OnlineAskCollectionView.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():OnlineAskCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "parentView?.keyBoardHidden">
+            </PersistentString>
+            <PersistentString
+               value = "(parentView?.keyBoardHidden)!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(UIApplication, supportedInterfaceOrientationsFor : UIWindow?) -&gt; UIInterfaceOrientationMask:AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "blockRotation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WaitExamInfoController.btn_close_inside(UIButton) -&gt; ():WaitExamInfoController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view">
+            </PersistentString>
+            <PersistentString
+               value = "view.isHidden">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ExamViewController.btn_prev_inside(UIButton) -&gt; ():ExamViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "questionIndex">
+            </PersistentString>
+            <PersistentString
+               value = "print(question)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyBaseUIViewController.setNavigationBarColor(views : [UIView?], titleIndex : Int, titleText : String) -&gt; ():MyBaseUIViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "titleView?.frame">
+            </PersistentString>
+            <PersistentString
+               value = "titleView?.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OutlineCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:OutlineCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;bbb&quot;].floatValue / json[&quot;ccc&quot;].floatValue">
+            </PersistentString>
+            <PersistentString
+               value = "json[&quot;ccc&quot;].intValue">
+            </PersistentString>
+            <PersistentString
+               value = "json[&quot;bbb&quot;].intValue">
+            </PersistentString>
+            <PersistentString
+               value = "CGFloat(json[&quot;bbb&quot;].floatValue / json[&quot;ccc&quot;].floatValue)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WaitExamTaskCollectionView.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():WaitExamTaskCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "parentView?.waitExamInfoView.next">
+            </PersistentString>
+            <PersistentString
+               value = "parentView?.waitExamInfoView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RecordsCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:RecordsCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "subQIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyselfController.(getMySelfData() -&gt; ()).(closure #1):MyselfController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.selfView.jsonDataSource[&quot;c0&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "json[&quot;data&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "j[&quot;c0&quot;] = JSON.init([&quot;22&quot;:&quot;333&quot;])">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskCenterController.tabsTouchAnimation(sender : UIButton) -&gt; ():TaskCenterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender.restorationIdentifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DirectoryCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:DirectoryCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "questions[indexPath.item]">
+            </PersistentString>
+            <PersistentString
+               value = "questions[indexPath.item][&quot;title&quot;].stringValue">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.item">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EvaluationDetailController.btn_submit_inside(UIButton) -&gt; ():EvaluationDetailController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "detailView.jsonDataSource">
+            </PersistentString>
+            <PersistentString
+               value = "headData[&quot;taskid&quot;].stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TurnCenterCollectionView.builderTurnTask(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:TurnCenterCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ExamViewController.btn_next_inside(UIButton) -&gt; ():ExamViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentType[&quot;questions&quot;].arrayValue.count">
+            </PersistentString>
+            <PersistentString
+               value = "questionIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CheckboxCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:CheckboxCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(anwserDic?[&quot;inputanswer&quot;]?.components(separatedBy: &quot;,&quot;))!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LBXScanViewController.startScan() -&gt; ():LBXScanViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "arrayCodeType">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyEvaluationListCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:MyEvaluationListCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "i &gt; 2 ? 0 : 1">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EvaluationDetailController.viewWillAppear(Bool) -&gt; ():EvaluationDetailController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "print(headData)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TurnCenterController.viewDidLoad() -&gt; ():TurnCenterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.viewWithTag(20001) as! UILabel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "getViewToStoryboard(String) -&gt; UIViewController:extension.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TurnTaskCollectionView.collectionView(UICollectionView, layout : UICollectionViewLayout, sizeForItemAt : IndexPath) -&gt; CGSize:TurnTaskCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collectionView.dequeueReusableCell(withReuseIdentifier: &quot;c1&quot;, for: indexPath).frame.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CheckboxCollectionView.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():CheckboxCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(describing: ia?[(ia?.startIndex)!])">
+            </PersistentString>
+            <PersistentString
+               value = "anwserDic[&quot;inputanswer&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "ia?[(ia?.startIndex)!]">
+            </PersistentString>
+            <PersistentString
+               value = "btn.currentTitle">
+            </PersistentString>
+            <PersistentString
+               value = "cell?.tag">
+            </PersistentString>
+            <PersistentString
+               value = "btn.currentTitle == String(describing: ia![(ia?.startIndex)!])">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ExamViewController.switchQuestionType(isNext : Bool) -&gt; ():ExamViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lbl_questionType.text">
+            </PersistentString>
+            <PersistentString
+               value = "typeIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OnlineAskController.(getMineDataSource() -&gt; ()).(closure #1):OnlineAskController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;data&quot;].arrayValue.count">
+            </PersistentString>
+            <PersistentString
+               value = "self.pageIndex">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.viewWithTag(40001)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyEvaluationDetailCollection.collectionView(UICollectionView, numberOfItemsInSection : Int) -&gt; Int:MyEvaluationDetailCollection.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "jsonDataSource[&quot;items&quot;].arrayValue.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PeiwuCollectionView.collectionView(UICollectionView, layout : UICollectionViewLayout, sizeForItemAt : IndexPath) -&gt; CGSize:PeiwuCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.item">
+            </PersistentString>
+            <PersistentString
+               value = "UIScreen.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

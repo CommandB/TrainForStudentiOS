@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FirstViewController.viewWillAppear(Bool) -&gt; ():FirstViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "c.progress">
+            </PersistentString>
+            <PersistentString
+               value = "c.process">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CircleDataView.draw(CGRect) -&gt; ():CircleDataView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "process">
+            </PersistentString>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

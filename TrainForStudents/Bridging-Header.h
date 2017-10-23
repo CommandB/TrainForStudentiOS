@@ -10,4 +10,6 @@
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 #import "UIButton+WebCache.h"
+#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD.h"
 #endif

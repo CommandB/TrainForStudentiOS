@@ -72,8 +72,8 @@ class MyEvaluationListController: MyBaseUIViewController , AVCaptureMetadataOutp
         
         tabsTouchAnimation(sender: btn_dept)
         
-        getEvaluationCollectionDatasource(0)
-        getEvaluationCollectionDatasource(1)
+        getEvaluationCollectionDatasource(60)
+        getEvaluationCollectionDatasource(50)
         
     }
     
@@ -97,17 +97,17 @@ class MyEvaluationListController: MyBaseUIViewController , AVCaptureMetadataOutp
     
     //获取评价列表
     func getEvaluationCollectionDatasource(_ type : Int){
-        
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         let url = SERVER_PORT+"rest/taskEvaluation/queryMyEvaluation.do"
-        myPostRequest(url,["student_state":"0" , "pageindex":0 , "pagesize":999]).responseJSON(completionHandler: {resp in
-            
+        myPostRequest(url,["evaluatetypeid":String(type) , "pageindex":0 , "pagesize":999]).responseJSON(completionHandler: {resp in
+            MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
             switch resp.result{
             case .success(let responseJson):
                 
                 let json = JSON(responseJson)
                 if json["code"].stringValue == "1"{
                     
-                    if type == 0 {
+                    if type == 50 {
                         self.deptView.jsonDataSource = json["data"].arrayValue
 //                        self.deptView.jsonDataSource = JSON.init(d)["data"].arrayValue
                         self.deptCollection.reloadData()
@@ -172,6 +172,9 @@ class MyEvaluationListController: MyBaseUIViewController , AVCaptureMetadataOutp
         UIView.commitAnimations()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
+    }
     
     
     

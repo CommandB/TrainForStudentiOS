@@ -147,7 +147,7 @@ class ScannerViewController: MyBaseUIViewController , AVCaptureMetadataOutputObj
     }
 
     @IBAction func btn_back_inside(_ sender: UIButton) {
-//        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
         let app = (UIApplication.shared.delegate) as! AppDelegate
         let tabBar = (app.window?.rootViewController) as! UITabBarController
         tabBar.selectedIndex = selectedTabBarIndex

@@ -15,7 +15,7 @@ class AssistantController: MyBaseUIViewController {
     
     @IBOutlet weak var assistantCollection: UICollectionView!
     
-    @IBOutlet weak var imageUploadCollection: UICollectionView!
+    @IBOutlet weak var tbl_imageUpload: UITableView!
     
     @IBOutlet weak var btn_scanTab: UIButton!
     
@@ -23,11 +23,12 @@ class AssistantController: MyBaseUIViewController {
     
     @IBOutlet weak var uploadImageView: UIView!
     
+    @IBOutlet weak var btn_uploadImage: UIButton!
     
     //按钮的集合
     var buttonGroup = [UIButton]()
     let assistantView = AssistantCollectionView()
-    let imageUpload = ImageUploadCollectionView()
+    let imageUpload = ImageUploadView()
     var taskId = ""
     var timer = Timer.init()
     
@@ -47,19 +48,21 @@ class AssistantController: MyBaseUIViewController {
         btn_scanTab.addTarget(self, action: #selector(btn_tab_inside), for: .touchUpInside)
         btn_imageUploadTab.addTarget(self, action: #selector(btn_tab_inside), for: .touchUpInside)
         
-        //设置图片上传collection的初始位置
-        imageUploadCollection.frame.origin = CGPoint(x: UIScreen.width, y: imageUploadCollection.frame.origin.y)
+        //设置图片上传view的初始位置
+        uploadImageView.frame.origin = CGPoint(x: UIScreen.width, y: uploadImageView.frame.origin.y)
         
         assistantView.parentView = self
         assistantCollection.delegate = assistantView
         assistantCollection.dataSource = assistantView
         
         imageUpload.parentView = self
-        imageUploadCollection.delegate = imageUpload
-        imageUploadCollection.dataSource = imageUpload
+        tbl_imageUpload.separatorStyle = .none
+        tbl_imageUpload.delegate = imageUpload
+        tbl_imageUpload.dataSource = imageUpload
+        tbl_imageUpload.estimatedRowHeight = 510
+        tbl_imageUpload.rowHeight = UITableViewAutomaticDimension
         
-        //隐藏资料上传 提交按钮的view
-        uploadImageView.isHidden = true
+        btn_uploadImage.layer.cornerRadius = 4
         
         //定时刷新学员列表
         timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(getStudentsData), userInfo: nil, repeats: true)
@@ -108,7 +111,7 @@ class AssistantController: MyBaseUIViewController {
                 let json = JSON(responseJson)
                 if json["code"].stringValue == "1"{
                     myAlert(self, message: "资料上传成功!" , handler : { action in
-                        
+                        self.getImages()
                     })
                     
                 }else{
@@ -188,18 +191,9 @@ class AssistantController: MyBaseUIViewController {
                 let json = JSON(responseJson)
                 if json["code"].stringValue == "1"{
                     
-                    for data in json["data"].arrayValue{
-                        do{
-                            for imgUrl in data["url"].arrayValue{
-                                try self.imageUpload.images.append(UIImage(data: Data.init(contentsOf: URL(string: imgUrl.stringValue)!))!)
-                            }
-                           
-                        }catch{
-                            
-                        }
-                        
-                    }
-                    self.imageUploadCollection.reloadData()
+                    print(json["data"].arrayValue)
+                    self.imageUpload.jsonDataSource = json["data"].arrayValue
+                    self.tbl_imageUpload.reloadData()
 //                    self.QRCode = json["qrcode"].stringValue
 //                    let imageView = self.view.viewWithTag(40001) as! UIImageView
 //                    imageView.image = UIImage.createQR(text: self.QRCode, size: 200)
@@ -241,11 +235,11 @@ class AssistantController: MyBaseUIViewController {
         //        }
         //滚动效果
         if sender.restorationIdentifier == "btn_scanTab"{
-            uploadImageView.isHidden = true
-            imageUploadCollection.frame = CGRect(origin: CGPoint(x:UIScreen.width , y: imageUploadCollection.frame.origin.y) , size: imageUploadCollection.frame.size)
+//            uploadImageView.isHidden = true
+            uploadImageView.frame = CGRect(origin: CGPoint(x:UIScreen.width , y: uploadImageView.frame.origin.y) , size: uploadImageView.frame.size)
         }else{
-            uploadImageView.isHidden = false
-            imageUploadCollection.frame = CGRect(origin: CGPoint(x:10 , y: imageUploadCollection.frame.origin.y) , size: imageUploadCollection.frame.size)
+//            uploadImageView.isHidden = false
+            uploadImageView.frame = CGRect(origin: CGPoint(x:0 , y: uploadImageView.frame.origin.y) , size: uploadImageView.frame.size)
             
         }
         UIView.setAnimationCurve(.easeOut)

@@ -16,7 +16,6 @@
 		0A0FA88D1F0F615300DFEA7E /* ppt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0FA8881F0F615300DFEA7E /* ppt.png */; };
 		0A0FA88E1F0F615300DFEA7E /* word.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0FA8891F0F615300DFEA7E /* word.png */; };
 		0A125A881F2204B300FDD4F4 /* BMPlayerCustomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A125A871F2204B300FDD4F4 /* BMPlayerCustomControlView.swift */; };
-		0A125A8A1F28956B00FDD4F4 /* ImageUploadCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A125A891F28956B00FDD4F4 /* ImageUploadCollectionView.swift */; };
 		0A125A8C1F29CBDB00FDD4F4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A125A8B1F29CBDB00FDD4F4 /* SettingsController.swift */; };
 		0A125A8E1F29CC6400FDD4F4 /* SettingsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A125A8D1F29CC6400FDD4F4 /* SettingsCollectionView.swift */; };
 		0A125A901F29D1FF00FDD4F4 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A125A8F1F29D1FF00FDD4F4 /* ChangePasswordController.swift */; };
@@ -52,7 +51,6 @@
 		0A291B6A1F429DDB008784B5 /* TaskApplyDetailImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B691F429DDB008784B5 /* TaskApplyDetailImageCollectionView.swift */; };
 		0A42F81B1F14C13B001DF281 /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42F81A1F14C13B001DF281 /* LoginInfo.swift */; };
 		0A42F81D1F15D706001DF281 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A42F81C1F15D706001DF281 /* location.png */; };
-		0A42F81F1F160C6C001DF281 /* AssistantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42F81E1F160C6C001DF281 /* AssistantController.swift */; };
 		0A42F8211F160F1D001DF281 /* AssistantCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42F8201F160F1D001DF281 /* AssistantCollectionView.swift */; };
 		0A42F8231F179EDA001DF281 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42F8221F179EDA001DF281 /* DateUtil.swift */; };
 		0A42F8251F1C72AD001DF281 /* TaskApplyListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42F8241F1C72AD001DF281 /* TaskApplyListController.swift */; };
@@ -174,6 +172,11 @@
 		0AFE94261F209C3F009C4CDF /* MyNoDataCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE94251F209C3F009C4CDF /* MyNoDataCellView.swift */; };
 		0AFE94281F209D46009C4CDF /* MyBaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE94271F209D46009C4CDF /* MyBaseCollectionView.swift */; };
 		351DE4A8F35C513E54679BCA /* Pods_TrainForStudents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 734644A1ED16B32D9EAD775A /* Pods_TrainForStudents.framework */; };
+		B475D8761F9C4B5F00A72543 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B475D8701F9C4B5F00A72543 /* MBProgressHUD+MJ.m */; };
+		B475D8771F9C4B5F00A72543 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B475D8711F9C4B5F00A72543 /* MBProgressHUD.bundle */; };
+		B475D8781F9C4B5F00A72543 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B475D8731F9C4B5F00A72543 /* MBProgressHUD.m */; };
+		B4847FAE1F9E13B600307D6F /* ImageUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4847FAD1F9E13B600307D6F /* ImageUploadView.swift */; };
+		B4847FB01F9E13DC00307D6F /* AssistantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4847FAF1F9E13DC00307D6F /* AssistantController.swift */; };
 		B4F9E8781F91014A0001D88F /* OtherFilesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E8771F91014A0001D88F /* OtherFilesController.swift */; };
 		B4F9E87B1F9106DD0001D88F /* OtherFilesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E8791F9106DD0001D88F /* OtherFilesCell.swift */; };
 		B4F9E87C1F9106DD0001D88F /* OtherFilesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F9E87A1F9106DD0001D88F /* OtherFilesCell.xib */; };
@@ -208,7 +211,6 @@
 		0A0FA8891F0F615300DFEA7E /* word.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = word.png; sourceTree = "<group>"; };
 		0A0FA88F1F110DB100DFEA7E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		0A125A871F2204B300FDD4F4 /* BMPlayerCustomControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMPlayerCustomControlView.swift; sourceTree = "<group>"; };
-		0A125A891F28956B00FDD4F4 /* ImageUploadCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUploadCollectionView.swift; sourceTree = "<group>"; };
 		0A125A8B1F29CBDB00FDD4F4 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		0A125A8D1F29CC6400FDD4F4 /* SettingsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCollectionView.swift; sourceTree = "<group>"; };
 		0A125A8F1F29D1FF00FDD4F4 /* ChangePasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
@@ -244,7 +246,6 @@
 		0A291B691F429DDB008784B5 /* TaskApplyDetailImageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskApplyDetailImageCollectionView.swift; sourceTree = "<group>"; };
 		0A42F81A1F14C13B001DF281 /* LoginInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
 		0A42F81C1F15D706001DF281 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
-		0A42F81E1F160C6C001DF281 /* AssistantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantController.swift; sourceTree = "<group>"; };
 		0A42F8201F160F1D001DF281 /* AssistantCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantCollectionView.swift; sourceTree = "<group>"; };
 		0A42F8221F179EDA001DF281 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		0A42F8241F1C72AD001DF281 /* TaskApplyListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskApplyListController.swift; sourceTree = "<group>"; };
@@ -373,6 +374,13 @@
 		734644A1ED16B32D9EAD775A /* Pods_TrainForStudents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainForStudents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82FD0C3B5DF5EF07841E9B70 /* Pods-TrainForStudents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainForStudents.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrainForStudents/Pods-TrainForStudents.debug.xcconfig"; sourceTree = "<group>"; };
 		8CCC089957700C973EA57112 /* Pods-TrainForStudents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainForStudents.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainForStudents/Pods-TrainForStudents.release.xcconfig"; sourceTree = "<group>"; };
+		B475D86F1F9C4B5F00A72543 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		B475D8701F9C4B5F00A72543 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		B475D8711F9C4B5F00A72543 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		B475D8721F9C4B5F00A72543 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B475D8731F9C4B5F00A72543 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B4847FAD1F9E13B600307D6F /* ImageUploadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUploadView.swift; sourceTree = "<group>"; };
+		B4847FAF1F9E13DC00307D6F /* AssistantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantController.swift; sourceTree = "<group>"; };
 		B4F9E8771F91014A0001D88F /* OtherFilesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherFilesController.swift; sourceTree = "<group>"; };
 		B4F9E8791F9106DD0001D88F /* OtherFilesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherFilesCell.swift; sourceTree = "<group>"; };
 		B4F9E87A1F9106DD0001D88F /* OtherFilesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherFilesCell.xib; sourceTree = "<group>"; };
@@ -649,7 +657,7 @@
 				0A7818E31F3090980072CF16 /* TaskDetail2Controller.swift */,
 				0AC3BCAC1EE97F2400227194 /* SearchViewController.swift */,
 				0AC3BCAE1EE9B56E00227194 /* VideoController.swift */,
-				0A42F81E1F160C6C001DF281 /* AssistantController.swift */,
+				B4847FAF1F9E13DC00307D6F /* AssistantController.swift */,
 				B4F9E8771F91014A0001D88F /* OtherFilesController.swift */,
 			);
 			name = TaskCenter;
@@ -733,7 +741,7 @@
 				0AC3B99E1EE8F9A100227194 /* UndoneCollectionView.swift */,
 				0AC3B9A01EE8FC0000227194 /* OverCollectionView.swift */,
 				0A42F8201F160F1D001DF281 /* AssistantCollectionView.swift */,
-				0A125A891F28956B00FDD4F4 /* ImageUploadCollectionView.swift */,
+				B4847FAD1F9E13B600307D6F /* ImageUploadView.swift */,
 			);
 			name = Collection;
 			sourceTree = "<group>";
@@ -781,9 +789,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B475D86E1F9C4B5F00A72543 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B475D86F1F9C4B5F00A72543 /* MBProgressHUD+MJ.h */,
+				B475D8701F9C4B5F00A72543 /* MBProgressHUD+MJ.m */,
+				B475D8711F9C4B5F00A72543 /* MBProgressHUD.bundle */,
+				B475D8721F9C4B5F00A72543 /* MBProgressHUD.h */,
+				B475D8731F9C4B5F00A72543 /* MBProgressHUD.m */,
+				B475D8741F9C4B5F00A72543 /* MJRefresh */,
+				B475D8751F9C4B5F00A72543 /* TOWebViewController */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		B475D8741F9C4B5F00A72543 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		B475D8751F9C4B5F00A72543 /* TOWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TOWebViewController;
+			sourceTree = "<group>";
+		};
 		B4FF1A601F94DF7D009C6685 /* Venders */ = {
 			isa = PBXGroup;
 			children = (
+				B475D86E1F9C4B5F00A72543 /* MBProgressHUD */,
 				B4FF1A611F94DF7D009C6685 /* SDWebImage */,
 			);
 			path = Venders;
@@ -923,6 +960,7 @@
 				0AEBF3C31F207EB200520E27 /* 年度.png in Resources */,
 				0A644D831F0209B5009025DD /* star.png in Resources */,
 				0A15D5571F0EA52D00908B7F /* 我的-灰.png in Resources */,
+				B475D8771F9C4B5F00A72543 /* MBProgressHUD.bundle in Resources */,
 				0A7818EF1F32F6990072CF16 /* 教材2x.png in Resources */,
 				0AC3B93F1EE4730B00227194 /* LaunchScreen.storyboard in Resources */,
 				0A7818F41F32F6990072CF16 /* 远程3x.png in Resources */,
@@ -1063,6 +1101,7 @@
 				0A644D991F062560009025DD /* MyEvaluationListCollectionView.swift in Sources */,
 				B4FF1A861F94DF7D009C6685 /* NSImage+WebCache.m in Sources */,
 				0A15D52A1F0E5F6100908B7F /* MeterialListCollectionView.swift in Sources */,
+				B475D8761F9C4B5F00A72543 /* MBProgressHUD+MJ.m in Sources */,
 				B4FF1A8A1F94DF7D009C6685 /* SDWebImageDecoder.m in Sources */,
 				0A644D851F021388009025DD /* EvaluationDetailController.swift in Sources */,
 				0A644D751F0189D0009025DD /* HistoryExamCollectionView.swift in Sources */,
@@ -1075,7 +1114,6 @@
 				B4FF1A941F94DF7D009C6685 /* UIView+WebCache.m in Sources */,
 				B4FF1A8B1F94DF7D009C6685 /* SDWebImageDownloader.m in Sources */,
 				B4FF1A851F94DF7D009C6685 /* NSData+ImageContentType.m in Sources */,
-				0A42F81F1F160C6C001DF281 /* AssistantController.swift in Sources */,
 				0A6A23BB1EF3BEBE00A1AC5B /* DirectoryCollectionView.swift in Sources */,
 				0A15D5091F0B3E1B00908B7F /* OnlineAskCollectionView.swift in Sources */,
 				0A6A23A61EEC70A500A1AC5B /* ScannerViewController.swift in Sources */,
@@ -1094,11 +1132,14 @@
 				B4FF1A871F94DF7D009C6685 /* SDImageCache.m in Sources */,
 				0A42F82D1F1D23FB001DF281 /* OutlineTaskCollectionView.swift in Sources */,
 				B4FF1A881F94DF7D009C6685 /* SDImageCacheConfig.m in Sources */,
+				B4847FAE1F9E13B600307D6F /* ImageUploadView.swift in Sources */,
 				B4FF1A911F94DF7D009C6685 /* UIImage+MultiFormat.m in Sources */,
 				0A291B661F4202B3008784B5 /* DifficultAddController.swift in Sources */,
 				0A644D8D1F03B579009025DD /* WishAddController.swift in Sources */,
+				B475D8781F9C4B5F00A72543 /* MBProgressHUD.m in Sources */,
 				B4FF1A8C1F94DF7D009C6685 /* SDWebImageDownloaderOperation.m in Sources */,
 				B4FF1A8F1F94DF7D009C6685 /* UIButton+WebCache.m in Sources */,
+				B4847FB01F9E13DC00307D6F /* AssistantController.swift in Sources */,
 				B4FF1A8E1F94DF7D009C6685 /* SDWebImagePrefetcher.m in Sources */,
 				B4F9E8781F91014A0001D88F /* OtherFilesController.swift in Sources */,
 				0A15D50F1F0BA58500908B7F /* TextFieldForNoMenu.swift in Sources */,
@@ -1129,7 +1170,6 @@
 				0A15D50D1F0B8F6000908B7F /* OnlineAskDetailCollectionView.swift in Sources */,
 				0AC3BC9E1EE94DA300227194 /* LBXPermissions.swift in Sources */,
 				0A42F8271F1C7319001DF281 /* TaskApplyListCollectionView.swift in Sources */,
-				0A125A8A1F28956B00FDD4F4 /* ImageUploadCollectionView.swift in Sources */,
 				0A644D971F062480009025DD /* MyEvaluationListController.swift in Sources */,
 				B4FF1A8D1F94DF7D009C6685 /* SDWebImageManager.m in Sources */,
 				0A644D871F021634009025DD /* EvaluationDetailCollectionView.swift in Sources */,
@@ -1284,7 +1324,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = M3CME6CTLX;
 				INFOPLIST_FILE = TrainForStudents/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1294,7 +1334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiuhua.TrainForStudents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/chenshengchang/Downloads/TrainForStudent/TrainForStudents/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/chenshengchang/Desktop/TrainForStudent_iOS/TrainForStudents/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1309,7 +1349,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = M3CME6CTLX;
 				INFOPLIST_FILE = TrainForStudents/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1319,7 +1359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiuhua.TrainForStudents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/chenshengchang/Downloads/TrainForStudent/TrainForStudents/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/chenshengchang/Desktop/TrainForStudent_iOS/TrainForStudents/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

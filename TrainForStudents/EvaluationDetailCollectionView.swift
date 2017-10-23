@@ -60,6 +60,9 @@ class EvaluationDetailCollectionView : UIViewController,  UICollectionViewDelega
             if selectedNumber != nil{
                 lightNumber = selectedNumber!
             }
+            if isReadonly {
+                lightNumber = data["numbervalue"].intValue
+            }
             touchStar(cell: cell, lightNumber: lightNumber)
             
             for i in 1 ... maxStarNumber{

@@ -110,8 +110,14 @@ class EvaluationDetailController: MyBaseUIViewController {
     //获取评价详情
     func getDetailDatasource(){
         
-        let url = SERVER_PORT+"rest/evaluation/query.do"
-        myPostRequest(url,["evaluationid":headData["evaluationid"].stringValue]).responseJSON(completionHandler: {resp in
+        var url = SERVER_PORT+"rest/evaluation/query.do"
+        var params = ["evaluationid":headData["evaluationid"].stringValue]
+        
+        if isReadonly {
+            url = SERVER_PORT+"rest/evaluation/queryHistoryResultInfo.do"
+            params = ["evaluationid":headData["evaluationid"].stringValue,"taskid":headData["taskid"].stringValue,"loginpersonid":headData["personid"].stringValue]
+        }
+        myPostRequest(url,params).responseJSON(completionHandler: {resp in
             
             switch resp.result{
             case .success(let responseJson):

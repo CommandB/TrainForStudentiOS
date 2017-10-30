@@ -32,7 +32,7 @@ class DifficultReplyView :UIViewController , UITableViewDelegate , UITableViewDa
         var lbl = cell.viewWithTag(10001) as! UILabel
         lbl.text = json["creater"].stringValue
         lbl = cell.viewWithTag(20001) as! UILabel
-        lbl.text = "\(json["answercontent"].stringValue)\(json["answercontent"].stringValue)\(json["answercontent"].stringValue)\(json["answercontent"].stringValue)\(json["answercontent"].stringValue)\(json["answercontent"].stringValue)\(json["answercontent"].stringValue)"
+        lbl.text = "\(json["answercontent"].stringValue)"
         
         lbl.numberOfLines = 0
         let num = lbl.text?.getLineNumberForUILabel(lbl)

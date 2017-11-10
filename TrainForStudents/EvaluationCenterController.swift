@@ -180,6 +180,38 @@ class EvaluationCenterController : MyBaseUIViewController , UIScrollViewDelegate
         
     }
     
+    @IBAction func startExamAction(_ sender: UIButton) {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        let cell = sender.superview?.superview as! UICollectionViewCell
+        let indexPath = self.examCollection.indexPath(for: cell)
+        let exercisesid = self.examView.jsonDataSource[(indexPath?.row)!]["exercisesid"].stringValue
+        
+        let vc = getViewToStoryboard("examView") as! ExamViewController
+        let url = SERVER_PORT + "rest/questions/queryExercisesQuestions.do"
+        //        let url = "http://120.77.181.22:8080/cloud_doctor_train/rest/questions/queryExercisesQuestions.do"
+        myPostRequest(url,["exercisesid" : exercisesid]).responseJSON(completionHandler: { resp in
+            MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
+            switch  resp.result{
+            case .success(let result):
+                let json = JSON(result)
+                if json["code"].intValue == 1 {
+                    vc.exercises = json["data"].arrayValue
+                    vc.exerciseId = exercisesid
+                    vc.taskId = self.examView.jsonDataSource[(indexPath?.row)!]["taskid"].stringValue
+                    vc.passscore = self.examView.jsonDataSource[(indexPath?.row)!]["passscore"].stringValue
+                    vc.isSimulation = true
+                    vc.isTheoryExam = true
+                    self.present(vc, animated: true, completion: nil)
+                }else{
+                    myAlert(self, message: json["msg"].stringValue)
+                }
+                
+            case .failure(let error):
+                debugPrint(error)
+            }
+        })
+    }
+    
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let x = scrollView.contentOffset.x
         if x < UIScreen.width.divided(by: 2){
@@ -345,6 +377,7 @@ class EvaluationCenterController : MyBaseUIViewController , UIScrollViewDelegate
                     vc.exercises = json["data"].arrayValue
                     vc.exerciseId = json["exercisesid"].stringValue
                     vc.isSimulation = true
+                    vc.isTheoryExam = false
                     self.present(vc, animated: true, completion: nil)
                 }else{
                     myAlert(self, message: json["msg"].stringValue)

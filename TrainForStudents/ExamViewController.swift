@@ -35,6 +35,10 @@ class ExamViewController : MyBaseUIViewController{
     
     @IBOutlet weak var resultView: UIView!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    var isTheoryExam = false
+    var passscore = "0"
     
     //未完成 collection
     @IBOutlet weak var questionCollection: UICollectionView!
@@ -130,8 +134,14 @@ class ExamViewController : MyBaseUIViewController{
             anwserList.append(v)
         }
         
-        let url = SERVER_PORT + "rest/exercises/commitPaper.do"
-        myPostRequest(url,["commit_questions":anwserList , "exercisesid": exerciseId , "taskid" : taskId]).responseJSON(completionHandler: { resp in
+        var url = SERVER_PORT + "rest/exercises/commitPaper.do"
+        
+        if isTheoryExam {
+            url = SERVER_PORT + "rest/exercises/theoryCommitPaper.do"
+        }
+        print(exerciseId,taskId)
+        
+        myPostRequest(url,["commit_questions":anwserList , "exercisesid": exerciseId , "taskid" : taskId, "passscore" :passscore, "request_source": "request_ios"]).responseJSON(completionHandler: { resp in
             switch  resp.result{
             case .success(let result):
                 let json = JSON(result)

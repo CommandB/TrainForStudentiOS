@@ -33,7 +33,7 @@ class TurnCenterController: MyBaseUIViewController {
         
         
         tc.parentVC = self
-        turnCenterCollection.registerNoDataCellView()
+//        turnCenterCollection.registerNoDataCellView()
         turnCenterCollection.dataSource = tc
         turnCenterCollection.delegate = tc
         turnCenterCollection.collectionViewLayout = collectionLayout

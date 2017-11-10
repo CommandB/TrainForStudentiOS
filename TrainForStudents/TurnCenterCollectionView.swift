@@ -27,9 +27,9 @@ class TurnCenterCollectionView : UIViewController,  UICollectionViewDelegate , U
     //设置collectionView的分区个数
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
-        if outLineData.count == 0{
-            return 1
-        }
+//        if outLineData.count == 0{
+//            return 1
+//        }
         outLineCount = outLineData.count + 1
         return outLineCount + turnTaskData.count
     }
@@ -45,9 +45,9 @@ class TurnCenterCollectionView : UIViewController,  UICollectionViewDelegate , U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         
-        if outLineData.count == 0{
-            return collectionView.dequeueReusableCell(withReuseIdentifier: MyNoDataCellView.identifier, for: indexPath)
-        }
+//        if outLineData.count == 0{
+//            return collectionView.dequeueReusableCell(withReuseIdentifier: MyNoDataCellView.identifier, for: indexPath)
+//        }
         
         if indexPath.section < outLineCount {
             return builderOutLine(_:collectionView , cellForItemAt:indexPath)

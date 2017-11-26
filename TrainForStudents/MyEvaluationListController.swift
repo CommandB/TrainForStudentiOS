@@ -50,7 +50,11 @@ class MyEvaluationListController: MyBaseUIViewController , AVCaptureMetadataOutp
         activityView.showNoDataCell = true
         
         btn_activity.restorationIdentifier = "btn_activity"
-        
+        deptCollection.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(refreshAction))
+    }
+    
+    func refreshAction() {
+        getEvaluationCollectionDatasource(60)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -101,6 +105,7 @@ class MyEvaluationListController: MyBaseUIViewController , AVCaptureMetadataOutp
         let url = SERVER_PORT+"rest/taskEvaluation/queryMyEvaluation.do"
         myPostRequest(url,["evaluatetypeid":String(type) , "pageindex":0 , "pagesize":999]).responseJSON(completionHandler: {resp in
             MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
+            self.deptCollection.mj_header.endRefreshing()
             switch resp.result{
             case .success(let responseJson):
                 

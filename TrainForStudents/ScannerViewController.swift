@@ -147,12 +147,10 @@ class ScannerViewController: MyBaseUIViewController , AVCaptureMetadataOutputObj
     }
 
     @IBAction func btn_back_inside(_ sender: UIButton) {
-//        dismiss(animated: true, completion: nil)
-        let app = (UIApplication.shared.delegate) as! AppDelegate
-        let tabBar = (app.window?.rootViewController) as! UITabBarController
-        tabBar.selectedIndex = selectedTabBarIndex
+        let tabBar = self.tabBarController
+        tabBar?.selectedIndex = selectedTabBarIndex
         if selectedTabBarIndex == 3 {
-            tabBar.selectedIndex = 0
+            tabBar?.selectedIndex = 0
         }
     }
     
@@ -167,18 +165,12 @@ class ScannerViewController: MyBaseUIViewController , AVCaptureMetadataOutputObj
                 let json = JSON(responseJson)
                 if json["code"].stringValue == "1"{
                     myAlert(vc, title: "签到", message: json["msg"].stringValue, handler: { action in
-//                        vc.dismiss(animated: true, completion: nil)
-                        let app = (UIApplication.shared.delegate) as! AppDelegate
-                        let tabBar = (app.window?.rootViewController) as! UITabBarController
-                        tabBar.selectedIndex = selectedTabBarIndex
+                        self.tabBarController?.selectedIndex = selectedTabBarIndex
                     })
                     
                 }else{
                     myAlert(vc, message: json["msg"].stringValue , handler : { action in
-//                        vc.dismiss(animated: true, completion: nil)
-                        let app = (UIApplication.shared.delegate) as! AppDelegate
-                        let tabBar = (app.window?.rootViewController) as! UITabBarController
-                        tabBar.selectedIndex = selectedTabBarIndex
+                        self.tabBarController?.selectedIndex = selectedTabBarIndex
                     })
                 }
             case .failure(let error):

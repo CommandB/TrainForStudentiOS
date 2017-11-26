@@ -29,7 +29,7 @@ class TaskApplyListCollectionView : MyBaseCollectionView{
         lbl.text = json["traincontent"].stringValue
         lbl = cell.viewWithTag(20001) as! UILabel
         lbl.text = "\(json["createtimeshow"].stringValue)"
-        lbl = cell.viewWithTag(20001) as! UILabel
+        lbl = cell.viewWithTag(30001) as! UILabel
         lbl.text = json["stateshow"].stringValue
         
         switch json["state"].intValue {

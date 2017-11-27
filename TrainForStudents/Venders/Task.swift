@@ -13,7 +13,7 @@ import SwiftyJSON
 class Task: NSObject {
     func checkUpdateForAppID(newVersionHandler: @escaping (_ thisVerion: String, _ newVersion: String) -> Void) {
         
-        Alamofire.request("http://itunes.apple.com/cn/lookup?id=1289216466", method: HTTPMethod.post, parameters: nil, encoding: URLEncoding.default, headers: ["Content-type":"application/x-www-form-urlencoded"]).responseJSON {
+        Alamofire.request("http://itunes.apple.com/cn/lookup?id=1279781724", method: HTTPMethod.post, parameters: nil, encoding: URLEncoding.default, headers: ["Content-type":"application/x-www-form-urlencoded"]).responseJSON {
             guard let value = $0.result.value,let json = Optional(JSON(value)),let version = json["results"].arrayValue.first?["version"].string,let versionInt = Int(version.replacingOccurrences(of: ".", with: "")),let thisVersion = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String),
                 let thisVersionInt = Int(thisVersion.replacingOccurrences(of: ".", with: ""))
                 else {

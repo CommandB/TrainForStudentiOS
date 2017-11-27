@@ -163,7 +163,10 @@ class TurnCenterCollectionView : UIViewController,  UICollectionViewDelegate , U
     //设置cell的大小
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if outLineData.count == 0{
-            return CGSize(width: UIScreen.width, height: 55 )
+            if indexPath.section == 0 {
+                return CGSize(width: UIScreen.width-20, height: 55.0 )
+            }
+            return CGSize(width: UIScreen.width-20, height: 110 )
         }else if indexPath.section == 0 {   //大纲要求的的标题
             return CGSize(width: UIScreen.width, height: 55 )
         }else if indexPath.section < outLineCount { //大纲要求的展示cell

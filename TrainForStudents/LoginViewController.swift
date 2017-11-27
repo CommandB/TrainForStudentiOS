@@ -18,6 +18,7 @@ class LoginViewController : MyBaseUIViewController, UIPickerViewDataSource , UIP
     
     @IBOutlet weak var txt_hospital: TextFieldForNoMenu!
     
+    @IBOutlet weak var loginBtn: UIButton!
     let myPickerView = UIPickerView()
     
     var pickerDataSource = [JSON]()
@@ -44,6 +45,8 @@ class LoginViewController : MyBaseUIViewController, UIPickerViewDataSource , UIP
         myPickerView.dataSource = self
         myPickerView.delegate = self
         
+        myPickerView.frame = CGRect.init(x: 0, y:  loginBtn.frame.maxY, width: self.view.frame.size.width, height: self.view.frame.size.height-loginBtn.frame.maxY)
+
         
         txt_loginId.returnKeyType = .next
         txt_loginId.delegate = self
@@ -209,6 +212,8 @@ class LoginViewController : MyBaseUIViewController, UIPickerViewDataSource , UIP
                     myAlert(self, message: json["msg"].stringValue)
                 }
                 
+                self.checkNewVersion()
+                
             case .failure(let error):
                 myAlert(self, message: "服务器异常!")
                 print(error)
@@ -216,6 +221,21 @@ class LoginViewController : MyBaseUIViewController, UIPickerViewDataSource , UIP
             
         })
         
+    }
+    
+    func checkNewVersion() {
+        Task().checkUpdateForAppID { (thisVersion, version) in
+            let alertController = UIAlertController(title: "最新版本(\(version))已发布", message: nil, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "立刻更新", style: .default) { (UIAlertAction) in
+                let AppID = "1279781724"
+                if let URL = URL(string: "https://itunes.apple.com/us/app/id\(AppID)?ls=1&mt=8") {
+                    UIApplication.shared.openURL(URL)
+                }
+            }
+            alertController.addAction(okAction)
+            guard let keyWindow = UIApplication.shared.keyWindow else { return }
+            keyWindow.rootViewController?.present(alertController, animated: true, completion: nil)
+        }
     }
     
 }

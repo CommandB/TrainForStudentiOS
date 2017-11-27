@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
         if token != nil{
             r_token = token!
         }
-        
+        checkNewVersion()
         return true
     }
 
@@ -186,6 +186,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
 //        UIApplication.shared.applicationIconBadgeNumber = 0
         print("bagge:\(UIApplication.shared.applicationIconBadgeNumber)")
         
+    }
+    
+    func checkNewVersion() {
+        Task().checkUpdateForAppID { (thisVersion, version) in
+            let alertController = UIAlertController(title: "最新版本(\(version))已发布", message: nil, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "立刻更新", style: .default) { (UIAlertAction) in
+                let AppID = "1279781724"
+                if let URL = URL(string: "https://itunes.apple.com/us/app/id\(AppID)?ls=1&mt=8") {
+                    UIApplication.shared.openURL(URL)
+                }
+            }
+            alertController.addAction(okAction)
+            self.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+        }
     }
 
 }

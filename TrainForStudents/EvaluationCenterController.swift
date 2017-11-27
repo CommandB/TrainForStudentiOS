@@ -185,11 +185,12 @@ class EvaluationCenterController : MyBaseUIViewController , UIScrollViewDelegate
         let cell = sender.superview?.superview as! UICollectionViewCell
         let indexPath = self.examCollection.indexPath(for: cell)
         let exercisesid = self.examView.jsonDataSource[(indexPath?.row)!]["exercisesid"].stringValue
+        let taskid = self.examView.jsonDataSource[(indexPath?.row)!]["taskid"].stringValue
         
         let vc = getViewToStoryboard("examView") as! ExamViewController
         let url = SERVER_PORT + "rest/questions/queryExercisesQuestions.do"
         //        let url = "http://120.77.181.22:8080/cloud_doctor_train/rest/questions/queryExercisesQuestions.do"
-        myPostRequest(url,["exercisesid" : exercisesid]).responseJSON(completionHandler: { resp in
+        myPostRequest(url,["exercisesid" : exercisesid,"taskid":taskid]).responseJSON(completionHandler: { resp in
             MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
             switch  resp.result{
             case .success(let result):

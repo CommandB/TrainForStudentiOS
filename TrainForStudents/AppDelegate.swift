@@ -205,28 +205,81 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
 }
 
 extension AppDelegate : JPUSHRegisterDelegate{
+    /**
+     收到静默推送的回调
+     
+     @param application  UIApplication 实例
+     @param userInfo 推送时指定的参数
+     @param completionHandler 完成回调
+     */
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        JPUSHService.handleRemoteNotification(userInfo)
+        print("iOS7及以上系统，收到通知:\(userInfo)")
+        completionHandler(UIBackgroundFetchResult.newData)
+        JPUSHService.setBadge(0)
+        application.applicationIconBadgeNumber = 0
+    }
     
+    //    func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
+    //        JPUSHService.showLocalNotification(atFront: notification, identifierKey: nil)
+    //    }
+    //
+    @available(iOS 10.0, *)
+    func jpushNotificationCenter(_ center: UNUserNotificationCenter!, willPresent notification: UNNotification!, withCompletionHandler completionHandler: ((Int) -> Void)!) {
+        
+        let userInfo = notification.request.content.userInfo
+        
+        //        let request = notification.request; // 收到推送的请求
+        //        let content = request.content; // 收到推送的消息内容
+        //
+        //        let badge = content.badge;  // 推送消息的角标
+        //        let body = content.body;    // 推送消息体
+        //        let sound = content.sound;  // 推送消息的声音
+        //        let subtitle = content.subtitle;  // 推送消息的副标题
+        //        let title = content.title;  // 推送消息的标题
+        
+        if (notification.request.trigger?.isKind(of: UNPushNotificationTrigger.self))!{
+            print("iOS10 前台收到远程通知:\(userInfo)")
+            JPUSHService.handleRemoteNotification(userInfo)
+        }else {
+            // 判断为本地通知
+            print("iOS10 前台收到本地通知:\(userInfo)")
+        }
+        completionHandler(Int(UNAuthorizationOptions.alert.rawValue | UNAuthorizationOptions.sound.rawValue | UNAuthorizationOptions.badge.rawValue))// 需要执行这个方法，选择是否提醒用户，有badge、sound、alert三种类型可以选择设置
+    }
+    
+    @available(iOS 10.0, *)
     func jpushNotificationCenter(_ center: UNUserNotificationCenter!, didReceive response: UNNotificationResponse!, withCompletionHandler completionHandler: (() -> Void)!) {
-        print(">JPUSHRegisterDelegate jpushNotificationCenter didReceive");
         let userInfo = response.notification.request.content.userInfo
+        
         if (response.notification.request.trigger?.isKind(of: UNPushNotificationTrigger.self))!{
+            print("iOS10 收到远程通知:\(userInfo)")
             JPUSHService.handleRemoteNotification(userInfo)
         }
         completionHandler()
-        UIApplication.shared.applicationIconBadgeNumber = 0
     }
-    
-    
-    func jpushNotificationCenter(_ center: UNUserNotificationCenter!, willPresent notification: UNNotification!, withCompletionHandler completionHandler: ((Int) -> Void)!) {
-        
-        print(">JPUSHRegisterDelegate jpushNotificationCenter willPresent");
-        let userInfo = notification.request.content.userInfo
-        if (notification.request.trigger?.isKind(of: UNPushNotificationTrigger.self))!{
-            JPUSHService.handleRemoteNotification(userInfo)
-        }
-        completionHandler(Int(UNAuthorizationOptions.alert.rawValue))// 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以选择设置
-        
-    }
-    
 }
+
+//    func jpushNotificationCenter(_ center: UNUserNotificationCenter!, didReceive response: UNNotificationResponse!, withCompletionHandler completionHandler: (() -> Void)!) {
+//        print(">JPUSHRegisterDelegate jpushNotificationCenter didReceive");
+//        let userInfo = response.notification.request.content.userInfo
+//        if (response.notification.request.trigger?.isKind(of: UNPushNotificationTrigger.self))!{
+//            JPUSHService.handleRemoteNotification(userInfo)
+//        }
+//        completionHandler()
+//        UIApplication.shared.applicationIconBadgeNumber = 0
+//    }
+//
+//
+//    func jpushNotificationCenter(_ center: UNUserNotificationCenter!, willPresent notification: UNNotification!, withCompletionHandler completionHandler: ((Int) -> Void)!) {
+//
+//        print(">JPUSHRegisterDelegate jpushNotificationCenter willPresent");
+//        let userInfo = notification.request.content.userInfo
+//        if (notification.request.trigger?.isKind(of: UNPushNotificationTrigger.self))!{
+//            JPUSHService.handleRemoteNotification(userInfo)
+//        }
+//        completionHandler(Int(UNAuthorizationOptions.alert.rawValue))// 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以选择设置
+//
+//    }
 

@@ -24,13 +24,28 @@ class RadioCollectionView : PeiwuCollectionView{
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellName, for: indexPath)
             //获取数据
             data = jsonDataSource
+            let qid = data["questionsid"].stringValue
             //渲染问题
             let lbl = (cell.viewWithTag(10001) as? UILabel)!
-            let title = data["indexname"].stringValue + " " + data["title"].stringValue
+            var title = data["indexname"].stringValue + " " + data["title"].stringValue
             lbl.text = title
             
             lbl.numberOfLines = title.getLineNumberForWidth(width: lbl.frame.width - boundary, cFont: (lbl.font)!)
             lbl.frame.size = CGSize(width: lbl.frame.size.width, height: getHeightForLabel(lbl: lbl))
+            
+            if qid == selectedQuestionId{
+                lbl.textColor = UIColor.init(hex: "68adf6")
+            }
+            //获取题目对应被选的答案
+            let inputanswer = parentView?.anwserDic[qid]?["inputanswer"]
+            if inputanswer != nil{
+                //在题目结尾展示答案
+                title.insert(Character.init(inputanswer!), at: title.index(before: title.endIndex))
+                lbl.text = title
+            }
+            //被选中则需要把题目对应被选中的答案也带出来
+            selectedDic[qid] = parentView?.anwserDic[qid]?["inputanswer"]
+
         }else{
             let cellName = "c2"
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellName, for: indexPath)
@@ -116,7 +131,9 @@ class RadioCollectionView : PeiwuCollectionView{
     
     //cell被选中
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if indexPath.row == 0 {
+            return
+        }
         let questionId = jsonDataSource["questionsid"].stringValue
         var anwserDic = parentView?.anwserDic[questionId]
         if anwserDic == nil{

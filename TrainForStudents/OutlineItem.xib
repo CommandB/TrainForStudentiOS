@@ -1,61 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OutlineItem" customModule="TrainForStudents" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <rect key="frame" x="0.0" y="0.0" width="399" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fh-ZZ-dv7">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fh-ZZ-dv7">
+                    <rect key="frame" x="0.0" y="0.0" width="399" height="44"/>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" tag="10001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[基本] 巴拉巴拉巴拉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNM-Dx-ZQP">
-                    <rect key="frame" x="16" y="8" width="223" height="20"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" tag="10001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[基本] 巴拉巴拉巴拉" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNM-Dx-ZQP">
+                    <rect key="frame" x="10" y="8" width="223" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="223" id="Zw8-d4-75g"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.23137254900000001" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" tag="10002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="总数" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN2-9o-Mdu">
-                    <rect key="frame" x="257" y="7" width="35" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" tag="10002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总数" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN2-9o-Mdu">
+                    <rect key="frame" x="273" y="13" width="31" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.23137254900000001" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" tag="10002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIf-im-yP4">
-                    <rect key="frame" x="294" y="7" width="20" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" tag="10002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIf-im-yP4">
+                    <rect key="frame" x="304" y="13" width="19" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.97647058819999999" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" tag="10002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="完成" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGu-H1-1tP">
-                    <rect key="frame" x="314" y="7" width="35" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <color key="textColor" red="0.23137254900000001" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" tag="10002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oA-vg-dj7">
-                    <rect key="frame" x="351" y="7" width="20" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" tag="10002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oA-vg-dj7">
+                    <rect key="frame" x="374" y="13" width="25" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="NrD-6r-Nkg"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.97647058819999999" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="10002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGu-H1-1tP">
+                    <rect key="frame" x="343" y="13" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.23137254900000001" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DGu-H1-1tP" secondAttribute="trailing" constant="25" id="APE-ka-lLD"/>
+                <constraint firstItem="5Fh-ZZ-dv7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rq5-dD-hHl"/>
+                <constraint firstItem="JNM-Dx-ZQP" firstAttribute="leading" secondItem="5Fh-ZZ-dv7" secondAttribute="leading" constant="10" id="Rxi-Ke-HXB"/>
+                <constraint firstItem="5Fh-ZZ-dv7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bcr-80-gCP"/>
+                <constraint firstItem="PIf-im-yP4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dRO-8L-HBx"/>
+                <constraint firstItem="9oA-vg-dj7" firstAttribute="centerY" secondItem="5Fh-ZZ-dv7" secondAttribute="centerY" id="djR-AQ-RH3"/>
+                <constraint firstItem="GN2-9o-Mdu" firstAttribute="trailing" secondItem="PIf-im-yP4" secondAttribute="leading" id="erM-32-QGU"/>
+                <constraint firstAttribute="bottom" secondItem="5Fh-ZZ-dv7" secondAttribute="bottom" id="glQ-HX-28m"/>
+                <constraint firstItem="9oA-vg-dj7" firstAttribute="trailing" secondItem="5Fh-ZZ-dv7" secondAttribute="trailing" id="ho8-nY-gHQ"/>
+                <constraint firstItem="JNM-Dx-ZQP" firstAttribute="centerY" secondItem="5Fh-ZZ-dv7" secondAttribute="centerY" id="lEF-3D-IxK"/>
+                <constraint firstItem="JNM-Dx-ZQP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="qLl-Ol-lvC"/>
+                <constraint firstItem="GN2-9o-Mdu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qYn-bx-NwA"/>
+                <constraint firstItem="PIf-im-yP4" firstAttribute="trailing" secondItem="DGu-H1-1tP" secondAttribute="leading" constant="-20" id="tLT-J2-7Tk"/>
+                <constraint firstItem="DGu-H1-1tP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tU6-PI-lfn"/>
+                <constraint firstAttribute="trailing" secondItem="5Fh-ZZ-dv7" secondAttribute="trailing" id="ttF-HP-CBe"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -64,7 +81,7 @@
                 <outlet property="lbl_content" destination="JNM-Dx-ZQP" id="Jj7-SM-8wh"/>
                 <outlet property="lbl_total" destination="PIf-im-yP4" id="hHn-zf-Zru"/>
             </connections>
-            <point key="canvasLocation" x="-279.5" y="-268.5"/>
+            <point key="canvasLocation" x="-267.5" y="-264"/>
         </view>
     </objects>
 </document>

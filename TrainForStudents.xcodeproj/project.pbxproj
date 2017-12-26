@@ -154,12 +154,8 @@
 		0AC3BC9F1EE94DA300227194 /* LBXScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3BC951EE94DA300227194 /* LBXScanLineAnimation.swift */; };
 		0AC3BCA01EE94DA300227194 /* LBXScanNetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3BC961EE94DA300227194 /* LBXScanNetAnimation.swift */; };
 		0AC3BCA11EE94DA300227194 /* LBXScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3BC971EE94DA300227194 /* LBXScanView.swift */; };
-		0AC3BCA21EE94DA300227194 /* LBXScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3BC981EE94DA300227194 /* LBXScanViewController.swift */; };
 		0AC3BCA31EE94DA300227194 /* LBXScanViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3BC991EE94DA300227194 /* LBXScanViewStyle.swift */; };
 		0AC3BCA41EE94DA300227194 /* LBXScanWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3BC9A1EE94DA300227194 /* LBXScanWrapper.swift */; };
-		0AC3BCA51EE94DA300227194 /* ScanResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3BC9B1EE94DA300227194 /* ScanResultController.swift */; };
-		0AC3BCA61EE94DA300227194 /* MyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3BC9C1EE94DA300227194 /* MyCodeViewController.swift */; };
-		0AC3BCA71EE94DA300227194 /* QQScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3BC9D1EE94DA300227194 /* QQScanViewController.swift */; };
 		0AC3BCA91EE9532200227194 /* qr_scan.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3BCA81EE9532200227194 /* qr_scan.png */; };
 		0AC3BCAB1EE9577B00227194 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3BCAA1EE9577B00227194 /* CodeScan.bundle */; };
 		0AC3BCAD1EE97F2400227194 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3BCAC1EE97F2400227194 /* SearchViewController.swift */; };
@@ -192,6 +188,7 @@
 		B468B7CC1FCA9BA000ECF396 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B468B7B61FCA9BA000ECF396 /* UIScrollView+MJExtension.m */; };
 		B468B7CD1FCA9BA000ECF396 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B468B7B81FCA9BA000ECF396 /* UIScrollView+MJRefresh.m */; };
 		B468B7CE1FCA9BA000ECF396 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B468B7BA1FCA9BA000ECF396 /* UIView+MJExtension.m */; };
+		B468B7D01FCC63BC00ECF396 /* BasePeiwuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B468B7CF1FCC63BC00ECF396 /* BasePeiwuCollectionView.swift */; };
 		B475D8761F9C4B5F00A72543 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B475D8701F9C4B5F00A72543 /* MBProgressHUD+MJ.m */; };
 		B475D8771F9C4B5F00A72543 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B475D8711F9C4B5F00A72543 /* MBProgressHUD.bundle */; };
 		B475D8781F9C4B5F00A72543 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B475D8731F9C4B5F00A72543 /* MBProgressHUD.m */; };
@@ -375,12 +372,8 @@
 		0AC3BC951EE94DA300227194 /* LBXScanLineAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanLineAnimation.swift; sourceTree = "<group>"; };
 		0AC3BC961EE94DA300227194 /* LBXScanNetAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanNetAnimation.swift; sourceTree = "<group>"; };
 		0AC3BC971EE94DA300227194 /* LBXScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanView.swift; sourceTree = "<group>"; };
-		0AC3BC981EE94DA300227194 /* LBXScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanViewController.swift; sourceTree = "<group>"; };
 		0AC3BC991EE94DA300227194 /* LBXScanViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanViewStyle.swift; sourceTree = "<group>"; };
 		0AC3BC9A1EE94DA300227194 /* LBXScanWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanWrapper.swift; sourceTree = "<group>"; };
-		0AC3BC9B1EE94DA300227194 /* ScanResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanResultController.swift; sourceTree = "<group>"; };
-		0AC3BC9C1EE94DA300227194 /* MyCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCodeViewController.swift; sourceTree = "<group>"; };
-		0AC3BC9D1EE94DA300227194 /* QQScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQScanViewController.swift; sourceTree = "<group>"; };
 		0AC3BCA81EE9532200227194 /* qr_scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr_scan.png; sourceTree = "<group>"; };
 		0AC3BCAA1EE9577B00227194 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
 		0AC3BCAC1EE97F2400227194 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -435,6 +428,7 @@
 		B468B7B81FCA9BA000ECF396 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		B468B7B91FCA9BA000ECF396 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		B468B7BA1FCA9BA000ECF396 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		B468B7CF1FCC63BC00ECF396 /* BasePeiwuCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePeiwuCollectionView.swift; sourceTree = "<group>"; };
 		B475D86F1F9C4B5F00A72543 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		B475D8701F9C4B5F00A72543 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		B475D8711F9C4B5F00A72543 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -635,6 +629,7 @@
 				0A6A23B11EF2690C00A1AC5B /* RecordsCollectionView.swift */,
 				0A6A23B61EF396FD00A1AC5B /* RecordsAnalysisCollectionView.swift */,
 				0A6A23BA1EF3BEBE00A1AC5B /* DirectoryCollectionView.swift */,
+				B468B7CF1FCC63BC00ECF396 /* BasePeiwuCollectionView.swift */,
 			);
 			name = Collection;
 			sourceTree = "<group>";
@@ -832,12 +827,8 @@
 				0AC3BC951EE94DA300227194 /* LBXScanLineAnimation.swift */,
 				0AC3BC961EE94DA300227194 /* LBXScanNetAnimation.swift */,
 				0AC3BC971EE94DA300227194 /* LBXScanView.swift */,
-				0AC3BC981EE94DA300227194 /* LBXScanViewController.swift */,
 				0AC3BC991EE94DA300227194 /* LBXScanViewStyle.swift */,
 				0AC3BC9A1EE94DA300227194 /* LBXScanWrapper.swift */,
-				0AC3BC9B1EE94DA300227194 /* ScanResultController.swift */,
-				0AC3BC9C1EE94DA300227194 /* MyCodeViewController.swift */,
-				0AC3BC9D1EE94DA300227194 /* QQScanViewController.swift */,
 			);
 			name = QrScanner;
 			sourceTree = "<group>";
@@ -1266,7 +1257,6 @@
 				0A15D5171F0BF5FB00908B7F /* QQStyleRefreshHeader.swift in Sources */,
 				0AC3B9371EE4730B00227194 /* ExamCenterController.swift in Sources */,
 				0AC3B9861EE5810900227194 /* TurnDetailController.swift in Sources */,
-				0AC3BCA51EE94DA300227194 /* ScanResultController.swift in Sources */,
 				0A644D601F00BD52009025DD /* EvaluationCenterController.swift in Sources */,
 				B4FF1A941F94DF7D009C6685 /* UIView+WebCache.m in Sources */,
 				B4FF1A8B1F94DF7D009C6685 /* SDWebImageDownloader.m in Sources */,
@@ -1280,7 +1270,6 @@
 				0A42F82B1F1C9520001DF281 /* TaskApplyImageCollectionView.swift in Sources */,
 				0AC3B9471EE4732700227194 /* CircleDataView.swift in Sources */,
 				0AC3B9811EE53F5900227194 /* String.swift in Sources */,
-				0AC3BCA21EE94DA300227194 /* LBXScanViewController.swift in Sources */,
 				0A15D5161F0BF5FB00908B7F /* QQStylePullingIndicator.swift in Sources */,
 				0AC3BCA41EE94DA300227194 /* LBXScanWrapper.swift in Sources */,
 				0A644D9B1F065B26009025DD /* MyEvaluationDetailController.swift in Sources */,
@@ -1310,7 +1299,6 @@
 				0AC3B9981EE6A60700227194 /* LoginViewController.swift in Sources */,
 				0AC3BB041EE94A0D00227194 /* MyBaseUIViewController.swift in Sources */,
 				0A644D5B1EFD0A5A009025DD /* OutlineItem.swift in Sources */,
-				0AC3BCA61EE94DA300227194 /* MyCodeViewController.swift in Sources */,
 				B4F9E87B1F9106DD0001D88F /* OtherFilesCell.swift in Sources */,
 				0AC3B9331EE4730B00227194 /* AppDelegate.swift in Sources */,
 				0AC3B9801EE53F5900227194 /* UIColor.swift in Sources */,
@@ -1322,7 +1310,7 @@
 				0AC3B9511EE5343A00227194 /* TurnCenterCollectionView.swift in Sources */,
 				0A42F81B1F14C13B001DF281 /* LoginInfo.swift in Sources */,
 				B468B7BB1FCA9BA000ECF396 /* MJRefreshAutoFooter.m in Sources */,
-				0AC3BCA71EE94DA300227194 /* QQScanViewController.swift in Sources */,
+				B468B7D01FCC63BC00ECF396 /* BasePeiwuCollectionView.swift in Sources */,
 				B468B7CA1FCA9BA000ECF396 /* MJRefreshConst.m in Sources */,
 				0A644D9F1F078CC9009025DD /* DifficultListCollectionView.swift in Sources */,
 				B468B7C71FCA9BA000ECF396 /* MJRefreshNormalHeader.m in Sources */,
@@ -1496,7 +1484,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = M3CME6CTLX;
 				INFOPLIST_FILE = TrainForStudents/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1521,7 +1509,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = M3CME6CTLX;
 				INFOPLIST_FILE = TrainForStudents/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

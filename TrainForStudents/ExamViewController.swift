@@ -239,7 +239,10 @@ class ExamViewController : MyBaseUIViewController{
             questionView = RecordsCollectionView()
         }else if question["type"].stringValue == "9"{   //论述题
             questionView = ShortAnswerCollectionView()
+        }else if question["type"].stringValue == "10"{
+            questionView = RadioCollectionView()
         }
+        
         
         questionView.myCollection = questionCollection
         questionView.parentView = self
@@ -276,6 +279,8 @@ class ExamViewController : MyBaseUIViewController{
             return total
         }else if json["type"].stringValue == "9"{ //论述题
             return 2
+        }else if json["type"].stringValue == "10"{
+            return json["answers"].arrayValue.count + 1
         }
         
         return 0

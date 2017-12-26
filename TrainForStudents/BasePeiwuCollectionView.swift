@@ -1,16 +1,15 @@
 //
-//  PeiwuCollectionView.swift
+//  BasePeiwuCollectionView.swift
 //  TrainForStudents
 //
-//  Created by 黄玮晟 on 2017/6/14.
+//  Created by 陈海峰 on 2017/11/27.
 //  Copyright © 2017年 黄玮晟. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import UIKit
 import SwiftyJSON
-
-class PeiwuCollectionView : QuestionCollectionView {
+class BasePeiwuCollectionView: QuestionCollectionView {
     
     var selectedQuestionId = ""
     var selectedDic = [String:String]()
@@ -39,9 +38,9 @@ class PeiwuCollectionView : QuestionCollectionView {
             //判断此题目是否被选中
             if parentView?.anwserDic[qid] != nil {  //被选中
                 
-//                if qid == selectedQuestionId{
-//                    lbl.textColor = UIColor.init(hex: "68adf6")
-//                }
+                if qid == selectedQuestionId{
+                    lbl.textColor = UIColor.init(hex: "68adf6")
+                }
                 //获取题目对应被选的答案
                 let inputanswer = parentView?.anwserDic[qid]?["inputanswer"]
                 if inputanswer != nil{
@@ -52,7 +51,7 @@ class PeiwuCollectionView : QuestionCollectionView {
                 //被选中则需要把题目对应被选中的答案也带出来
                 selectedDic[qid] = parentView?.anwserDic[qid]?["inputanswer"]
             }else{  //没选中
-//                lbl.textColor = UIColor.init(hex: "3b454f")
+                lbl.textColor = UIColor.init(hex: "3b454f")
             }
             
         }else{
@@ -164,7 +163,7 @@ class PeiwuCollectionView : QuestionCollectionView {
             //把此题目的选中设置为空 让用户重新选择
             selectedDic[qid] = nil
             
-//            parentView?.anwserDic[qid] = nil
+            //            parentView?.anwserDic[qid] = nil
             
         }else{
             if selectedQuestionId == "" {
@@ -179,26 +178,26 @@ class PeiwuCollectionView : QuestionCollectionView {
             
             let data = a[indexPath.item - subQ.count]
             //判断该选择有否已被选中
-//            for (_,tab) in selectedDic {
-//                if tab == data["selecttab"].stringValue{
-//                    myAlert(parentView!, message: "改选项已匹配另一题目!")
-//                    return
-//                }
-//            }
+            for (_,tab) in selectedDic {
+                if tab == data["selecttab"].stringValue{
+                    myAlert(parentView!, message: "改选项已匹配另一题目!")
+                    return
+                }
+            }
             parentView?.anwserDic[selectedQuestionId]?["inputanswer"] = data["selecttab"].stringValue
             
-//            selectedQuestionId = ""
+                        selectedQuestionId = ""
             
         }
         //collectionView.reloadItems(at: [indexPath])
         
         
-//        print("现在选中的id是\(selectedQuestionId)")
-//        print("selectedArray : \(selectedArray.description)")
-//        print("parentView?.anwserDic : \(parentView?.anwserDic.description)")
+        //        print("现在选中的id是\(selectedQuestionId)")
+        //        print("selectedArray : \(selectedArray.description)")
+        //        print("parentView?.anwserDic : \(parentView?.anwserDic.description)")
         
         collectionView.reloadData()
         
     }
-
+    
 }

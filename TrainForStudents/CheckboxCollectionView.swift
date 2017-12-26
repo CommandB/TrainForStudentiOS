@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SwiftyJSON
 
-class CheckboxCollectionView : PeiwuCollectionView{
+class CheckboxCollectionView : BasePeiwuCollectionView{
     
     //实现UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
@@ -115,7 +115,9 @@ class CheckboxCollectionView : PeiwuCollectionView{
     
     //cell被选中
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if indexPath.row == 0 {
+            return
+        }
         let cell = collectionView.cellForItem(at: indexPath)
         let btn = cell?.viewWithTag(10001) as! UIButton
         let questionId = jsonDataSource["questionsid"].stringValue
@@ -133,6 +135,7 @@ class CheckboxCollectionView : PeiwuCollectionView{
             }else{
                 ia = (ia)! + "," + btn.currentTitle!
             }
+            ia = ia?.components(separatedBy: ",").sorted().joined(separator: ",")
             cell?.tag = 1
         }else{  //已选中
             btn.setTitleColor(UIColor.init(hex: "5ea3f3"), for: .normal)
@@ -155,6 +158,25 @@ class CheckboxCollectionView : PeiwuCollectionView{
         }
         anwserDic?["inputanswer"] = ia
         parentView?.anwserDic[questionId] = anwserDic
+
+        let inputanswer = anwserDic?["inputanswer"]
+
+        if inputanswer != nil{
+            let cell = collectionView.cellForItem(at: IndexPath.init(row: 0, section: 0))
+            let lbl = (cell?.viewWithTag(10001) as? UILabel)!
+            var title = jsonDataSource["indexname"].stringValue + " " + jsonDataSource["title"].stringValue
+
+            //在题目结尾展示答案
+//            title.insert(Character.init(inputanswer!), at: title.index(before: title.endIndex))
+            
+//            title.insert("dadad".characters, at: title.endIndex-1)
+//            title.insert(inputanswer?.characters, at: title.startIndex)
+
+            let str = inputanswer!
+            
+            title.insert(contentsOf: str.characters, at: title.index(title.endIndex, offsetBy: -3))
+            lbl.text = title
+        }
     }
     
     

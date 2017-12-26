@@ -87,6 +87,9 @@ class MyEvaluationListCollectionView : MyBaseCollectionView{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let vc = getViewToStoryboard("myEvaluationDetailView") as! MyEvaluationDetailController
+        guard jsonDataSource.count > 0 else {
+            return
+        }
         vc.evaluationView.jsonDataSource = jsonDataSource[indexPath.item]
         parentView.present(vc, animated: true, completion: nil)
         
